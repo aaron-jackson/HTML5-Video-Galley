@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
 
     <title>Video Gallery</title>
-    <link rel="stylesheet" type="text/css" href="includes/video-gallery.css">
+    <link rel="stylesheet" type="text/css" href="includes/video-gallery.css" />
+    <link rel="stylesheet" type="text/css" href="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css">
     <!--[if lt IE 9]-->
         <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
-        <link rel="stylesheet" type="text/css" href="includes/video-gallery-ie.css">
+        <link rel="stylesheet" type="text/css" href="includes/video-gallery-ie.css" />
     <!-- [endif]-->
 </head>
 <body>
-     
+     <div class="video_gallery_container">
+        <a class="videoLink" videowidth="800" videoheight="450" videofile="cycling_large"  videocaption="Caption for cycling_large goes here" ></a>
+        <a class="videoLink" videowidth="640" videoheight="360" videofile="ocean_medium" videocaption="Caption for ocean_medium goes here" ></a>
+        <a class="videoLink" videowidth="400" videoheight="250" videofile="winecountry_part1" videocaption="Caption for winecountry_part1 goes here"></a>
+        <a class="videoLink" videowidth="640" videoheight="402"  videofile="winecountry_part2" videocaption="Caption for winecountry_part2 goes here"></a>
+        <a class="videoLink" videowidth="860" videoheight="540" videofile="winecountry_part3" videocaption="Caption for winecountry_part3 goes here"></a>
+        <a class="videoLink" videowidth="300" videoheight="168" videofile="cycling_small"  videocaption="Caption for cycling_small goes here" ></a>
+         <div class="clear_both"></div>
+     </div>
+
+<script type="text/javascript" src="includes/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="includes/video-gallery.js"></script>
 </body>
 </html>
