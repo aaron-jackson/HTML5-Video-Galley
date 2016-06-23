@@ -18,13 +18,20 @@ $(document).ready(function() {
 
         $('#videoPlayer').html(videoCode);
 
-        $.fancybox({
+        var checkBrowser = navigator.userAgent.toLowerCase();
+        var isAndroid = checkBrowser.indexOf('android') > -1;
+        var isiPhone = checkBrowser.indexOf('iphone') > -1;
+        var isiPod = checkBrowser.indexOf('ipod') > -1;
+        
+        if( isAndroid || isiPhone || isiPod ){
+            window.location = 'video/'+videoFile+'.mp4';
+        }else{
+            $.fancybox({
             'transitionIn' : 'fade',
             'transitionOut' : 'fade',
-            'overlayColor' : '#000',
-            'overlayOpacity' : '.6',
             'href' : '#videoPlayer'
-        });
+            });
+        }
 
     });
     
